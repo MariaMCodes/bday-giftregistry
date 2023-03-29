@@ -129,14 +129,26 @@ nav {
 }
 
 
+/* ------------------------------------------------------ */
+
+
 /* <---- Desktop and Laptop Screens ----> */
+
+
+/* ------------------------------------------------------ */
 
 
 /*@media only screen and (max-width:1280px){
 }*/
 
 
+/* ------------------------------------------------------ */
+
+
 /* <---- iPads to Smartphone for Common Elements ----> */
+
+
+/* ------------------------------------------------------ */
 
 @media only screen and (max-width: 1024px) {
     nav {
@@ -274,4 +286,41 @@ nav {
     .main-menu a:after {
         display: none;
     }
+    /* ------------------------------------------------------ */
+    /* <---- iPads (portrait) ----> */
+    /* ------------------------------------------------------ */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {}
+    /* ------------------------------------------------------ */
+    /* <---- iPads (landscape) ----> */
+    /* ------------------------------------------------------ */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+    /* ------------------------------------------------------ */
+    /* <---- Mini Tablet and Big Mobile ----> */
+    /* ------------------------------------------------------ */
+    @media only screen and (min-width: 640px) and (max-width: 760px) and (orientation: landscape) {}
+    /* ------------------------------------------------------ */
+    /* <---- Mini Tablet ----> */
+    /* ------------------------------------------------------ */
+    @media only screen and (max-width: 600px) {}
+    /* ------------------------------------------------------ */
+    /* <---- Smartphones (portrait and landscape) ----> */
+    /* ------------------------------------------------------ */
+    @media only screen and (max-width: 480px) {
+        #header-top .logo {
+            padding-top: .8em;
+            font-size: 30px;
+            padding-left: .8em;
+        }
+        .mainMenu a.active:first-child {
+            margin-top: 15px;
+        }
+    }
+    /* ------------------------------------------------------ */
+    /* <---- Small Devices (portrait and landscape) ----> */
+    /* ------------------------------------------------------ */
+    @media only screen and (max-width: 380px) {}
+    /* ------------------------------------------------------ */
+    /* <---- X-Tra Small Devices  (portrait and landscape) ----> */
+    /* ------------------------------------------------------ */
+    @media only screen and (max-width: 320px) {}
 }
