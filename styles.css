@@ -181,6 +181,31 @@ nav {
 }
 
 
+/* Countdown Timer */
+
+#timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 0 20px #FAAB78;
+    background: #8B7E74;
+    text-align: center;
+    padding: 50px;
+}
+
+#timer div {
+    display: inline-block;
+    min-width: 90px;
+}
+
+#timer div span {
+    color: #FAAB78;
+    display: block;
+    font-size: .45em;
+    font-weight: 400;
+}
+
+
 /* ------------------------------------------------------ */
 
 
@@ -190,6 +215,9 @@ nav {
 /* ------------------------------------------------------ */
 
 @media only screen and (max-width:1280px) {
+    #intro {
+        padding-bottom: 3em;
+    }
     #intro-info {
         width: 45%;
     }
@@ -385,7 +413,7 @@ nav {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     section {
-        padding: 0 3em 3em;
+        padding: 0 3em 2em;
     }
     #intro-info {
         width: 100%;
@@ -421,7 +449,7 @@ nav {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     section {
-        padding-bottom: 3em;
+        padding-bottom: 2em;
     }
     #intro {
         padding-top: 4em;
@@ -502,7 +530,7 @@ nav {
         padding: 0 2em 5em;
     }
     #intro {
-        padding-bottom: 12em;
+        padding-bottom: 2em;
         padding-top: 1em;
     }
     #intro-info h1 {
@@ -550,7 +578,7 @@ nav {
         padding: 0 1em 3em;
     }
     #intro {
-        padding: 1em 1em 12em 1em;
+        padding: 0em 1em 2em 1em;
     }
     #intro-img img {
         height: 240px;
@@ -568,6 +596,9 @@ nav {
 /* ------------------------------------------------------ */
 
 @media only screen and (max-width: 380px) {
+    #intro {
+        padding: 0 0 1.5em 0;
+    }
     #intro-info h1 {
         font-size: 20px;
     }
@@ -592,6 +623,9 @@ nav {
 /* ------------------------------------------------------ */
 
 @media only screen and (max-width: 320px) {
+    #intro {
+        padding: 0 0 1.5em 0;
+    }
     #intro-info h1 {
         font-size: 18px;
     }
