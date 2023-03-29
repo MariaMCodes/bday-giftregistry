@@ -1,0 +1,277 @@
+/* My Style Sheet */
+
+
+/* SKELETON */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: block;
+    padding: 0 4em 5em;
+}
+
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+
+/* Header at top of webpage, contains the nav bar */
+
+#header-top {
+    padding: 1em 4em;
+    font-family: roboto;
+    /* Surrounds nav box */
+    background-color: #F7F5EB;
+}
+
+nav {
+    padding: 10px 20px 80px 20px;
+    background-color: #F7F5EB;
+}
+
+.logo {
+    float: left;
+}
+
+.main-menu {
+    float: right;
+    /* Add padding to centre links */
+    padding-top: 20px;
+}
+
+.main-menu a {
+    padding: 15px 0;
+    /* Add space between links */
+    margin-left: 40px;
+    font-size: 18px;
+    /* Removes underline */
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+/* Changes font color upon hover */
+
+.main-menu a:hover,
+.main-menu a:focus {
+    color: #BA6B57;
+}
+
+
+/* Underlines links upon hover - but not for last child link ie send email */
+
+.main-menu a:not(:last-child):hover:after,
+.main-menu a:not(:last-child):focus:after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* Underlines links when hover */
+
+.main-menu a:after {
+    top: 40px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    background: #BA6B57;
+    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.main-menu a:first-child {
+    margin: 0;
+}
+
+
+/* Last child link */
+
+.main-menu a:last-child {
+    border: 2px solid #BA6B57;
+    padding: 8px 16px !important;
+    font-size: 17px;
+    border-radius: 20px;
+    text-align: center;
+    color: #BA6B57;
+}
+
+
+/* Hover effect for the last link */
+
+.main-menu a:last-child:hover,
+.main-menu a:last-child:focus {
+    background-color: #BA6B57;
+    color: white;
+}
+
+
+/* <---- Desktop and Laptop Screens ----> */
+
+
+/*@media only screen and (max-width:1280px){
+}*/
+
+
+/* <---- iPads to Smartphone for Common Elements ----> */
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        /* Covers the nav bar visible on larger screens */
+        padding: 0;
+    }
+    /* Position menu button on right */
+    .menu-btn {
+        height: 32px;
+        width: 40px;
+        cursor: pointer;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        padding-right: 4em;
+        top: 1.75em;
+    }
+    /* Menu button - first 2 lines */
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        background: #BA6B57;
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 6px;
+        margin-top: 13px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    /* Menu button - last line */
+    .menu-btn span::before {
+        margin-top: -12px;
+    }
+    .menu-btn span::after {
+        margin-top: 12px;
+    }
+    .menu-btn.active span {
+        background: transparent;
+    }
+    /* Animated x to close menu - one side of x */
+    .menu-btn.active span::before {
+        margin-top: 0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    /* Animated x to close menu - other side of x */
+    .menu-btn.active span::after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+    #header-top {
+        position: relative;
+        padding-bottom: 0;
+    }
+    /* Logo */
+    #header-top .logo {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        padding-top: .5em;
+        font-size: 40px;
+        left: 0;
+        padding-left: 1em;
+    }
+    /* Menu button visible */
+    /* can change background color */
+    .main-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #F7F5EB;
+        width: 100%;
+        padding: 1em 2em 2em;
+        z-index: 1;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    .main-menu.active {
+        /* Padding for side bar */
+        padding-top: 5em;
+    }
+    /* Removes the links so only menu button is visible and centered */
+    /* Styling the side bar */
+    .main-menu a {
+        display: list-item;
+        text-align: right;
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        color: black;
+        pointer-events: none;
+        line-height: 0;
+        padding: 0 2em 0 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
+    }
+    /* Styling the side bar */
+    /* Send email link */
+    .main-menu a:last-child {
+        background-color: #F7F5EB;
+        color: #BA6B57;
+        border-color: #BA6B57;
+        width: 120px;
+        float: right;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .main-menu a.active {
+        pointer-events: auto;
+        line-height: 1.3;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 1;
+        visibility: visible;
+    }
+    /* Line disappears upon hover */
+    .main-menu a.active:hover {
+        background-color: #BA6B57;
+    }
+    .main-menu a.active:first-child {
+        border-top: 1px solid;
+        margin-top: 18px;
+        padding-top: 15px;
+    }
+    /* Font color for links */
+    .main-menu a span {
+        color: black;
+    }
+    .main-menu a:after {
+        display: none;
+    }
+}
