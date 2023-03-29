@@ -32,3 +32,6 @@ function updateTimer() {
         '<div>' + s + '<span>seconds</span></div>';
 }
 setInterval('updateTimer()', 1000);
+
+
+// Email form
