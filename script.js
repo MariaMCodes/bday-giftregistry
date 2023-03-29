@@ -10,7 +10,7 @@ function menuBtnFunction(menuBtn) {
 
 
 function updateTimer() {
-    future = Date.parse("apr 21, 2023 24:00:00");
+    future = Date.parse("apr 21, 2023 22:59:59");
     now = new Date();
     diff = future - now;
 

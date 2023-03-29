@@ -206,6 +206,9 @@ nav {
 }
 
 
+/* Image Carousel */
+
+
 /* ------------------------------------------------------ */
 
 
@@ -230,6 +233,25 @@ nav {
     #intro-img img {
         height: 300px;
         width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1037px) {
+    #intro {
+        padding-bottom: 3em;
+    }
+    #intro-info {
+        width: 45%;
+    }
+    #intro-info h1 {
+        font-size: 36px;
+    }
+    #intro-img {
+        width: 55%;
+    }
+    #intro-img img {
+        height: 280px;
+        width: 460px;
     }
 }
 
@@ -382,7 +404,6 @@ nav {
     /* Introduction Section */
     #intro-info {
         width: 40%;
-        padding-top: 20px;
     }
     #intro-info h1 {
         font-size: 28px;
@@ -480,7 +501,7 @@ nav {
 /* ------------------------------------------------------ */
 
 
-/* <---- Mini Tablet and Big Mobile ----> */
+/* <---- Mini Tablet and Big Mobile (Landscape) ----> */
 
 
 /* ------------------------------------------------------ */
@@ -512,6 +533,47 @@ nav {
     #intro-img img {
         height: 180px;
         width: 300px;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- Mini Tablet and Big Mobile (Portrait) ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (min-width: 610px) and (max-width: 760px) and (orientation: portrait) {
+    section {
+        display: block;
+        padding: 0 2em 5em;
+    }
+    #intro {
+        padding-bottom: 2em;
+        padding-top: 1em;
+    }
+    #intro-info h1 {
+        font-size: 26px;
+    }
+    #intro-info span {
+        padding: 0 0 45px;
+        font-size: 20px;
+    }
+    #intro-tag-btn {
+        position: absolute;
+        display: block !important;
+        bottom: 60px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    #intro-info,
+    #intro-img {
+        display: block !important;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -632,5 +694,27 @@ nav {
     #intro-img img {
         height: 160px;
         width: 265px;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- Less than 300px screens ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (min-width: 190px) and (max-width: 260px) {
+    #intro {
+        padding: 0 0 0.5em 0;
+    }
+    #intro-info h1 {
+        font-size: 18px;
+    }
+    #intro-img img {
+        height: 100px;
+        width: 165px;
     }
 }
