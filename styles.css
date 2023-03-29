@@ -29,7 +29,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {}
+h6 {
+    font-family: roboto;
+    color: #2E2E2E
+}
+
+p {
+    font-family: lato;
+    color: #717171;
+    line-height: 1.5;
+    text-align: justify
+}
 
 
 /* Header at top of webpage, contains the nav bar */
@@ -129,6 +139,48 @@ nav {
 }
 
 
+/* Introduction Section */
+
+#intro {
+    padding-top: 3em;
+    position: relative;
+}
+
+#intro div {
+    display: inline-table;
+}
+
+#intro-info {
+    width: 50%;
+    float: left;
+    margin-top: 5.8%;
+}
+
+#intro-info h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0px 0 30px;
+}
+
+#intro-info span {
+    display: block;
+    font-family: raleway;
+    font-weight: 600;
+    padding: 0 0 55px;
+    font-size: 23px;
+}
+
+#intro-img {
+    width: 50%;
+    text-align: right;
+}
+
+#intro-img img {
+    height: 300px;
+    width: 500px;
+}
+
+
 /* ------------------------------------------------------ */
 
 
@@ -137,9 +189,21 @@ nav {
 
 /* ------------------------------------------------------ */
 
-
-/*@media only screen and (max-width:1280px){
-}*/
+@media only screen and (max-width:1280px) {
+    #intro-info {
+        width: 45%;
+    }
+    #intro-info h1 {
+        font-size: 36px;
+    }
+    #intro-img {
+        width: 55%;
+    }
+    #intro-img img {
+        height: 300px;
+        width: 500px;
+    }
+}
 
 
 /* ------------------------------------------------------ */
@@ -164,6 +228,7 @@ nav {
         position: absolute;
         right: 0;
         padding-right: 4em;
+        padding-top: 0.4em;
         top: 1.75em;
     }
     /* Menu button - first 2 lines */
@@ -212,7 +277,7 @@ nav {
         position: absolute;
         z-index: 2;
         top: 0;
-        padding-top: .3em;
+        padding-top: .4em;
         font-size: 40px;
         left: 0;
         padding-left: 1em;
@@ -286,41 +351,252 @@ nav {
     .main-menu a:after {
         display: none;
     }
-    /* ------------------------------------------------------ */
-    /* <---- iPads (portrait) ----> */
-    /* ------------------------------------------------------ */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {}
-    /* ------------------------------------------------------ */
-    /* <---- iPads (landscape) ----> */
-    /* ------------------------------------------------------ */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
-    /* ------------------------------------------------------ */
-    /* <---- Mini Tablet and Big Mobile ----> */
-    /* ------------------------------------------------------ */
-    @media only screen and (min-width: 640px) and (max-width: 760px) and (orientation: landscape) {}
-    /* ------------------------------------------------------ */
-    /* <---- Mini Tablet ----> */
-    /* ------------------------------------------------------ */
-    @media only screen and (max-width: 600px) {}
-    /* ------------------------------------------------------ */
-    /* <---- Smartphones (portrait and landscape) ----> */
-    /* ------------------------------------------------------ */
-    @media only screen and (max-width: 480px) {
-        #header-top .logo {
-            padding-top: .4em;
-            font-size: 30px;
-            padding-left: .6em;
-        }
-        .mainMenu a.active:first-child {
-            margin-top: 15px;
-        }
+    /* Introduction Section */
+    #intro-info {
+        width: 40%;
+        padding-top: 20px;
     }
-    /* ------------------------------------------------------ */
-    /* <---- Small Devices (portrait and landscape) ----> */
-    /* ------------------------------------------------------ */
-    @media only screen and (max-width: 380px) {}
-    /* ------------------------------------------------------ */
-    /* <---- X-Tra Small Devices  (portrait and landscape) ----> */
-    /* ------------------------------------------------------ */
-    @media only screen and (max-width: 320px) {}
+    #intro-info h1 {
+        font-size: 28px;
+        margin: 60px 0 20px;
+    }
+    #intro-info span {
+        font-size: 19px;
+        padding: 0 0 45px;
+    }
+    #intro-img {
+        width: 60%;
+        padding-top: 60px;
+    }
+    #intro-img img {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- iPads (portrait) ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    section {
+        padding: 0 3em 3em;
+    }
+    #intro-info {
+        width: 100%;
+        text-align: center;
+    }
+    #intro-info h1 {
+        font-size: 25px;
+        margin: 20px 0 20px;
+    }
+    #intro-info span {
+        font-size: 19px;
+        padding: 0 0 45px;
+    }
+    #intro-img {
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+    }
+    #intro-img img {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- iPads (landscape) ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    section {
+        padding-bottom: 3em;
+    }
+    #intro {
+        padding-top: 4em;
+        padding-bottom: 3em;
+    }
+    #intro-info {
+        margin-top: 4.8%;
+        width: 40%;
+    }
+    #intro-info h1 {
+        font-size: 23px;
+        margin: 30px 0 20px;
+    }
+    #intro-info span {
+        font-size: 20px;
+        padding: 0 0 45px;
+    }
+    #intro-img {
+        width: 60%;
+    }
+    #intro-img img {
+        height: 200px;
+        width: 330px;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- Mini Tablet and Big Mobile ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (min-width: 640px) and (max-width: 760px) and (orientation: landscape) {
+    section {
+        padding: 0 2em 3em;
+    }
+    #intro {
+        padding-bottom: 2em;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    #intro-info {
+        width: 40%;
+        margin-top: 2.8%;
+    }
+    #intro-info h1 {
+        font-size: 22px;
+        margin: 40px 0 15px;
+    }
+    #intro-info span {
+        font-size: 17px;
+        padding: 0 0 35px;
+    }
+    #intro-img {
+        width: 60%;
+    }
+    #intro-img img {
+        height: 180px;
+        width: 300px;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- Mini Tablet ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (max-width: 600px) {
+    section {
+        display: block;
+        padding: 0 2em 5em;
+    }
+    #intro {
+        padding-bottom: 12em;
+        padding-top: 1em;
+    }
+    #intro-info h1 {
+        font-size: 26px;
+    }
+    #intro-info span {
+        padding: 0 0 45px;
+        font-size: 20px;
+    }
+    #intro-tag-btn {
+        position: absolute;
+        display: block !important;
+        bottom: 60px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    #intro-info,
+    #intro-img {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- Smartphones (portrait and landscape) ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (max-width: 480px) {
+    #header-top .logo {
+        padding-top: .4em;
+        font-size: 30px;
+        padding-left: .6em;
+    }
+    .mainMenu a.active:first-child {
+        margin-top: 15px;
+    }
+    section {
+        padding: 0 1em 3em;
+    }
+    #intro {
+        padding: 1em 1em 12em 1em;
+    }
+    #intro-img img {
+        height: 240px;
+        width: 400px;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- Small Devices (portrait and landscape) ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (max-width: 380px) {
+    #intro-info h1 {
+        font-size: 20px;
+    }
+    #intro-img img {
+        height: 180px;
+        width: 300px;
+    }
+    #intro-tag-btn {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* <---- X-Tra Small Devices  (portrait and landscape) ----> */
+
+
+/* ------------------------------------------------------ */
+
+@media only screen and (max-width: 320px) {
+    #intro-info h1 {
+        font-size: 18px;
+    }
+    #intro-img img {
+        height: 160px;
+        width: 265px;
+    }
 }
