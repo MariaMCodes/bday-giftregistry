@@ -491,7 +491,7 @@
                     position: absolute;
                     z-index: 2;
                     top: 0;
-                    padding-top: .4em;
+                    padding-top: .05em;
                     font-size: 40px;
                     left: 0;
                     padding-left: 1em;
@@ -757,7 +757,7 @@
             
             @media only screen and (max-width: 480px) {
                 #header-top .logo {
-                    padding-top: .4em;
+                    padding-top: .05em;
                     font-size: 30px;
                     padding-left: .6em;
                 }
