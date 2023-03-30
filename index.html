@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <!-- external font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -292,6 +293,9 @@
             </div>
         </div>
     </section>
+    <!-- Back to top button -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <!-- Footer -->
     <footer>
         <div id="copyright">
             &copy; All Rights Reserved 2023.
@@ -303,7 +307,23 @@
         </div>
 
     </footer>
-
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll').fadeIn();
+                } else {
+                    $('#scroll').fadeOut();
+                }
+            });
+            $('#scroll').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+    </script>
 </body>
 
 </html>
