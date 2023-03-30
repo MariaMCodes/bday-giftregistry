@@ -25,16 +25,16 @@
     <!-- Navigation Bar -->
     <header id="header-top">
         <nav>
-            <span class="logo"><img src="img/apple.png" style="height:70px; width: 90px"></span>
+            <span class="logo"><a href="#intro"><img src="img/apple.png" alt="Apple Logo" style="height:70px; width: 90px"></a></span>
             <div class="menu-btn" onclick="menuBtnFunction(this)">
                 <span></span>
             </div>
             <div class="main-menu">
-                <a href="#" target="_blank"><span>Link 1</span></a>
-                <a href="#" target="_blank"><span>Link 2</span></a>
-                <a href="#" target="_blank"><span>Link 4</span></a>
-                <a href="#" target="_blank"><span>Link 5</span></a>
-                <a href="">Send Email</a>
+                <a href="#timer" target="_blank"><span>Days Left</span></a>
+                <a href="#slideshow-test" target="_blank"><span>Wish List</span></a>
+                <a href="#email" target="_blank"><span>Contact</span></a>
+                <!--<a href="#" target="_blank"><span>Link 5</span></a>-->
+                <a href="mailto:maria.mempin@hotmail.com">Send Email</a>
             </div class="main-menu">
         </nav>
     </header>
@@ -59,7 +59,7 @@
     </div>
 
     <!-- Image Carousel -->
-    <div class="slideshow-test">
+    <div id="slideshow-test">
         <!-- Slide #1 -->
         <div class="slideshow" data-transition="fade">
             <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked" />
