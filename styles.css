@@ -381,8 +381,8 @@
             
             #email {
                 background-color: #f6f6f6;
-                height: 800px;
-                padding: 0.5em 0;
+                height: 780px;
+                padding: 0.1em 0 0 0;
             }
             
             .contact-elements {
@@ -466,7 +466,7 @@
             .row.header {
                 padding: 1.5em 2.5em;
                 border-bottom: 1px solid #ccc;
-                background-color: #F1AE89;
+                background-color: #D6D2C4;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 text-align: center;
@@ -621,6 +621,30 @@
                 li small {
                     display: none;
                 }
+            }
+            /* Footer */
+            
+            footer {
+                background-color: #555555;
+                padding: 3em 4em 2em;
+            }
+            
+            #copyright {
+                text-align: center;
+                color: #fff;
+                font-family: lato;
+            }
+            
+            #owner {
+                text-align: center;
+                padding: 20px 0 0px;
+                color: #fff;
+                font-family: lato;
+                font-size: 25px;
+            }
+            
+            #owner a {
+                color: #fff;
             }
             /* ------------------------------------------------------ */
             /* <---- Desktop and Laptop Screens ----> */
