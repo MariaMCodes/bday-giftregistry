@@ -1,3 +1,4 @@
+
 <?php
 if($_POST)
 {
@@ -33,7 +34,7 @@ if($_POST)
         $output = json_encode(array('type'=>'error', 'text' => 'Enter only digits in phone number'));
         die($output);
     }
-    if(strlen($message)<3){ //check emtpy message
+    if(strlen($message)<3){ //check empty message
         $output = json_encode(array('type'=>'error', 'text' => 'You forgot the most important part..'));
         die($output);
     }
