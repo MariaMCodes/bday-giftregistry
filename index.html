@@ -20,313 +20,311 @@
 </head>
 
 <body>
-    <?php 
-    include ("contact.php");
-    ?>
-    <!-- Navigation Bar -->
-    <header id="header-top">
-        <nav>
-            <span class="logo"><a href="#intro"><img src="img/apple.png" alt="Apple Logo" style="height:70px; width: 90px"></a></span>
-            <div class="menu-btn" onclick="menuBtnFunction(this)">
-                <span></span>
-            </div>
-            <div class="main-menu">
-                <a href="#timer" target="_blank"><span>Days Left</span></a>
-                <a href="#slideshow-test" target="_blank"><span>Wish List</span></a>
-                <a href="#email" target="_blank"><span>Contact</span></a>
-                <!--<a href="#" target="_blank"><span>Link 5</span></a>-->
-                <a href="mailto:maria.mempin@hotmail.com">Send Email</a>
-            </div class="main-menu">
-        </nav>
-    </header>
-    <!-- Introduction -->
-    <section id="intro">
-        <div id="intro-info">
-            <div>
-                <h1>Apple's Birthday Gift Registry</h1>
-                <div id="intro-tag-btn">
+    <a?php include ( "contact.php"); ?>
+        <!-- Navigation Bar -->
+        <header id="header-top">
+            <nav>
+                <span class="logo"><a href="#intro"><img src="img/apple.png" alt="Apple Logo" style="height:70px; width: 90px"></a></span>
+                <div class="menu-btn" onclick="menuBtnFunction(this)">
                     <span></span>
+                </div>
+                <div class="main-menu">
+                    <a href="#timer" target="_blank"><span>Days Left</span></a>
+                    <a href="#slideshow-test" target="_blank"><span>Wish List</span></a>
+                    <a href="#email" target="_blank"><span>Contact</span></a>
+                    <!--<a href="#" target="_blank"><span>Link 5</span></a>-->
+                    <a href="mailto:maria.mempin@hotmail.com">Send Email</a>
+                </div class="main-menu">
+            </nav>
+        </header>
+        <!-- Introduction -->
+        <section id="intro">
+            <div id="intro-info">
+                <div>
+                    <h1>Apple's Birthday Gift Registry</h1>
+                    <div id="intro-tag-btn">
+                        <span></span>
 
+                    </div>
+                </div>
+            </div>
+
+            <div id="intro-img">
+                <img src="img/hermes.jpg" alt="Hermes Header" style="opacity: calc(0.9);">
+            </div>
+        </section>
+        <!-- Countdown Timer -->
+        <div id="timer">
+        </div>
+
+        <!-- Image Carousel -->
+        <div id="slideshow-test">
+            <!-- Slide #1 -->
+            <div class="slideshow" data-transition="fade">
+                <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>AMI Paris</h1>
+                        <p>Ami de coeur crew-neck jumper</p>
+                        <p>Size: XS</p>
+                        <p>$620</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank"><img src="img/ami-paris-sweater.jpg" alt="Ami Paris Navy Jumper" /></a>
+                        <label for="ss2-item-10" class="slideshow--nav slideshow--nav-previous">Go to slide 10</label>
+                        <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">Go to slide 2</label>
+                    </div>
+
+                </div>
+
+                <!-- Slide #2 -->
+                <input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Marant Étoile</h1>
+                        <p>Logo-print long-sleeve sweatshirt</p>
+                        <p>Size: 34 (XS)</p>
+                        <p>$520</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/marant-etoile-logo-print-long-sleeve-sweatshirt-item-19555484.aspx" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://www.farfetch.com/au/shopping/women/marant-etoile-logo-print-long-sleeve-sweatshirt-item-19555484.aspx" target="_blank"><img src="img/marant-sweater3.jpg" alt="Marant Étoile Sweatshirt" /></a>
+                        <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">Go to slide 1</label>
+                        <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">Go to slide 3</label>
+                    </div>
+                </div>
+
+                <!-- Slide #3 -->
+                <input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Polo Ralph Lauren</h1>
+                        <p>Cable-knit wool-cashmere cardigan</p>
+                        <p>Size: XS</p>
+                        <p>$499</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.ralphlauren.com.au/cable-knit-wool-cashmere-cardigan-622625.html?dwvar622625_colorname=Collection%20Camel%20Melange&cgid=women-jumpers-cardigans&webcat=women%2Fclothing%2Fwomen%20jumpers%20cardigans" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://www.ralphlauren.com.au/cable-knit-wool-cashmere-cardigan-622625.html?dwvar622625_colorname=Collection%20Camel%20Melange&cgid=women-jumpers-cardigans&webcat=women%2Fclothing%2Fwomen%20jumpers%20cardigans" target="_blank"><img src="img/ralphlauren2.jpg" alt="Polo Ralph Lauren Cardigan" /></a>
+                        <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">Go to slide 2</label>
+                        <label for="ss2-item-4" class="slideshow--nav slideshow--nav-next">Go to slide 4</label>
+                    </div>
+                </div>
+                <!-- Slide #4 -->
+                <input type="radio" name="ss2" id="ss2-item-4" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Scanlan Theodore</h1>
+                        <p>Lace up boots</p>
+                        <p>Size: 36</p>
+                        <p>$800</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.scanlantheodore.com/au/products/lace-up-bootie-black?variant=39823712518216" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://www.scanlantheodore.com/au/products/lace-up-bootie-black?variant=39823712518216" target="_blank"><img src="img/boots3.png" alt="Scanlan and Theodore Lace Up Boots" /></a>
+                        <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
+                        <label for="ss2-item-5" class="slideshow--nav slideshow--nav-next">Go to slide 5</label>
+                    </div>
+                </div>
+
+                <!-- Slide #5 -->
+                <input type="radio" name="ss2" id="ss2-item-5" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Hermés</h1>
+                        <p>Rose azalée/Noir casaque single tour</p>
+                        <p>Size: 41mm</p>
+                        <p>$469</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.apple.com/au/shop/product/MR2A3FE/A/apple-watch-hermès-41-mm-rose-azalée-noir-casaque-single-tour?fnode=35d9c87ffd8b3cb7446949a67b4aa258204c17c3d1b817494110f4ed3a5355fb3cd4c5a82d242f6302d024d853e26d6d04a8f496e78175ee365a997fdec682b7fb61425b38cd95aa38658abd2312841e"
+                            target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://www.apple.com/au/shop/product/MR2A3FE/A/apple-watch-hermès-41-mm-rose-azalée-noir-casaque-single-tour?fnode=35d9c87ffd8b3cb7446949a67b4aa258204c17c3d1b817494110f4ed3a5355fb3cd4c5a82d242f6302d024d853e26d6d04a8f496e78175ee365a997fdec682b7fb61425b38cd95aa38658abd2312841e"
+                            target="_blank"><img src="img/hermes-band.jpeg" alt="Hermés Apple Watch Band" /></a>
+                        <label for="ss2-item-4" class="slideshow--nav slideshow--nav-previous">Go to slide 4</label>
+                        <label for="ss2-item-6" class="slideshow--nav slideshow--nav-next">Go to slide 6</label>
+                    </div>
+                </div>
+                <!-- Slide #6 -->
+                <input type="radio" name="ss2" id="ss2-item-6" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Hermés</h1>
+                        <p>Rose texas swift leather single tour</p>
+                        <p>Size: 41mm</p>
+                        <p>$499</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.apple.com/au/shop/product/MPK63FE/A/apple-watch-hermès-41-mm-rose-texas-swift-leather-single-tour" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://www.apple.com/au/shop/product/MPK63FE/A/apple-watch-hermès-41-mm-rose-texas-swift-leather-single-tour" target="_blank"><img src="img/hermes-band2.jpeg" alt="Hermés Apple Watch Band" /></a>
+                        <label for="ss2-item-5" class="slideshow--nav slideshow--nav-previous">Go to slide 5</label>
+                        <label for="ss2-item-7" class="slideshow--nav slideshow--nav-next">Go to slide 7</label>
+                    </div>
+                </div>
+                <!-- Slide #7 -->
+                <input type="radio" name="ss2" id="ss2-item-7" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Louis Vuitton</h1>
+                        <p>MNG vivienne scarf</p>
+                        <p></p>
+                        <p>$755</p>
+                        <br>
+                        <a class="buy-btn" href="https://au.louisvuitton.com/eng-au/products/mng-vivienne-scarf-s00-nvprod3270023v/M77973" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://au.louisvuitton.com/eng-au/products/mng-vivienne-scarf-s00-nvprod3270023v/M77973" target="_blank"><img src="img/lv-scarf.jpg" alt="Louis Vuitton Scarf" /></a <label for="ss2-item-6" class="slideshow--nav slideshow--nav-previous">Go to slide 6</label>
+                        <label for="ss2-item-8" class="slideshow--nav slideshow--nav-next">Go to slide 8</label>
+                    </div>
+                </div>
+                <!-- Slide #8 -->
+                <input type="radio" name="ss2" id="ss2-item-8" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Louis Vuitton</h1>
+                        <p>Clemence notebook</p>
+                        <p></p>
+                        <p>$370</p>
+                        <br>
+                        <a class="buy-btn" href="https://au.louisvuitton.com/eng-au/products/clemence-notebook-s00-nvprod3580104v/GI0767" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://au.louisvuitton.com/eng-au/products/clemence-notebook-s00-nvprod3580104v/GI0767" target="_blank"><img src="img/lv-book.jpg" alt="Louis Vuitton Notebook" /></a>
+                        <label for="ss2-item-7" class="slideshow--nav slideshow--nav-previous">Go to slide 7</label>
+                        <label for="ss2-item-9" class="slideshow--nav slideshow--nav-next">Go to slide 9</label>
+                    </div>
+                </div>
+                <!-- Slide #9 -->
+                <input type="radio" name="ss2" id="ss2-item-9" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>Chanel</h1>
+                        <p>Rouge allure ink - Matte liquid lipstick</p>
+                        <p>Shade: Gourmandise</p>
+                        <p>$65</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.davidjones.com/brand/chanel/makeup/lips/25809893/Matte-Liquid-Lipstick.html" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <a href="https://www.davidjones.com/brand/chanel/makeup/lips/25809893/Matte-Liquid-Lipstick.html" target="_blank"><img src="img/chanel-lipstick.jpg" alt="Chanel Rouge Allure Ink Lipstick" /></a>
+                        <label for="ss2-item-8" class="slideshow--nav slideshow--nav-previous">Go to slide 8</label>
+                        <label for="ss2-item-10" class="slideshow--nav slideshow--nav-next">Go to slide 10</label>
+                    </div>
+                </div>
+                <!-- Slide #10 -->
+                <input type="radio" name="ss2" id="ss2-item-10" class="slideshow--bullet" />
+                <div class="slideshow--item">
+                    <div class="slider-text">
+                        <h1>AMI Paris</h1>
+                        <p>Ami De Coeur crew-neck jumper</p>
+                        <p>XS</p>
+                        <p>$620</p>
+                        <br>
+                        <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
+                    </div>
+                    <div class="slider-img">
+
+                        <img src="img/ami-paris-sweater.jpg" />
+                        <label for="ss2-item-9" class="slideshow--nav slideshow--nav-previous">Go to slide 9</label>
+                        <label for="ss2-item-1" class="slideshow--nav slideshow--nav-next">Go to slide 1</label>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Email form -->
+        <section id="email">
+            <form action="mailto:maria.mempin@hotmail.com" method="post" enctype="text/plain">
+                <div class="contact container shadow" id="contact_form">
+                    <div class="contact row header">
+                        <h1 style="color:#555555">Please send any questions below:</h1>
 
-        <div id="intro-img">
-            <img src="img/hermes.jpg" alt="Hermes Header" style="opacity: calc(0.9);">
-        </div>
-    </section>
-    <!-- Countdown Timer -->
-    <div id="timer">
-    </div>
-
-    <!-- Image Carousel -->
-    <div id="slideshow-test">
-        <!-- Slide #1 -->
-        <div class="slideshow" data-transition="fade">
-            <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>AMI Paris</h1>
-                    <p>Ami De Coeur crew-neck jumper</p>
-                    <p>Size: XS</p>
-                    <p>$620</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ami-paris-sweater.jpg" alt="Ami Paris Sweater" />
-                    <label for="ss2-item-10" class="slideshow--nav slideshow--nav-previous">Go to slide 10</label>
-                    <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">Go to slide 2</label>
-                </div>
-
-            </div>
-
-            <!-- Slide #2 -->
-            <input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>Polo Ralph Lauren</h1>
-                    <p>Cable-Knit Wool-Cashmere Cardigan</p>
-                    <p>Size: XS</p>
-                    <p>$499</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.ralphlauren.com.au/cable-knit-wool-cashmere-cardigan-622625.html?dwvar622625_colorname=Collection%20Camel%20Melange&cgid=women-jumpers-cardigans&webcat=women%2Fclothing%2Fwomen%20jumpers%20cardigans" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ralphlauren.jpg" alt="Ralph Lauren Sweater" />
-                    <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">Go to slide 1</label>
-                    <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">Go to slide 3</label>
-                </div>
-            </div>
-
-            <!-- Slide #3 -->
-            <input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>Hermés</h1>
-                    <p>Rose Azalée/Noir Casaque Single Tour</p>
-                    <p>Size: 41mm</p>
-                    <p>$469</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.apple.com/au/shop/product/MR2A3FE/A/apple-watch-hermès-41-mm-rose-azalée-noir-casaque-single-tour?fnode=35d9c87ffd8b3cb7446949a67b4aa258204c17c3d1b817494110f4ed3a5355fb3cd4c5a82d242f6302d024d853e26d6d04a8f496e78175ee365a997fdec682b7fb61425b38cd95aa38658abd2312841e"
-                        target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/hermes-band.jpeg" alt="Hermes Apple Watch Band" />
-                    <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">Go to slide 2</label>
-                    <label for="ss2-item-4" class="slideshow--nav slideshow--nav-next">Go to slide 4</label>
-                </div>
-            </div>
-            <!-- Slide #4 -->
-            <input type="radio" name="ss2" id="ss2-item-4" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>Scanlan Theodore</h1>
-                    <p>Lace Up Boots</p>
-                    <p>Size: 36</p>
-                    <p>$800</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.scanlantheodore.com/au/products/lace-up-bootie-black?variant=39823712518216" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/boots2.png" alt="Scanlan and Theodore Lace Up Boots" />
-                    <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
-                    <label for="ss2-item-5" class="slideshow--nav slideshow--nav-next">Go to slide 5</label>
-                </div>
-            </div>
-
-            <!-- Slide #5 -->
-            <input type="radio" name="ss2" id="ss2-item-5" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>AMI Paris</h1>
-                    <p>Ami De Coeur crew-neck jumper</p>
-                    <p>XS</p>
-                    <p>$620</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ami-paris-sweater.jpg" />
-                    <label for="ss2-item-4" class="slideshow--nav slideshow--nav-previous">Go to slide 4</label>
-                    <label for="ss2-item-6" class="slideshow--nav slideshow--nav-next">Go to slide 6</label>
-                </div>
-            </div>
-            <!-- Slide #6 -->
-            <input type="radio" name="ss2" id="ss2-item-6" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>AMI Paris</h1>
-                    <p>Ami De Coeur crew-neck jumper</p>
-                    <p>XS</p>
-                    <p>$620</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ami-paris-sweater.jpg" />
-                    <label for="ss2-item-5" class="slideshow--nav slideshow--nav-previous">Go to slide 5</label>
-                    <label for="ss2-item-7" class="slideshow--nav slideshow--nav-next">Go to slide 7</label>
-                </div>
-            </div>
-            <!-- Slide #7 -->
-            <input type="radio" name="ss2" id="ss2-item-7" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>AMI Paris</h1>
-                    <p>Ami De Coeur crew-neck jumper</p>
-                    <p>XS</p>
-                    <p>$620</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ami-paris-sweater.jpg" />
-                    <label for="ss2-item-6" class="slideshow--nav slideshow--nav-previous">Go to slide 6</label>
-                    <label for="ss2-item-8" class="slideshow--nav slideshow--nav-next">Go to slide 8</label>
-                </div>
-            </div>
-            <!-- Slide #8 -->
-            <input type="radio" name="ss2" id="ss2-item-8" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>AMI Paris</h1>
-                    <p>Ami De Coeur crew-neck jumper</p>
-                    <p>XS</p>
-                    <p>$620</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ami-paris-sweater.jpg" />
-                    <label for="ss2-item-7" class="slideshow--nav slideshow--nav-previous">Go to slide 7</label>
-                    <label for="ss2-item-9" class="slideshow--nav slideshow--nav-next">Go to slide 9</label>
-                </div>
-            </div>
-            <!-- Slide #9 -->
-            <input type="radio" name="ss2" id="ss2-item-9" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>AMI Paris</h1>
-                    <p>Ami De Coeur crew-neck jumper</p>
-                    <p>XS</p>
-                    <p>$620</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ami-paris-sweater.jpg" />
-                    <label for="ss2-item-8" class="slideshow--nav slideshow--nav-previous">Go to slide 8</label>
-                    <label for="ss2-item-10" class="slideshow--nav slideshow--nav-next">Go to slide 10</label>
-                </div>
-            </div>
-            <!-- Slide #10 -->
-            <input type="radio" name="ss2" id="ss2-item-10" class="slideshow--bullet" />
-            <div class="slideshow--item">
-                <div class="slider-text">
-                    <h1>AMI Paris</h1>
-                    <p>Ami De Coeur crew-neck jumper</p>
-                    <p>XS</p>
-                    <p>$620</p>
-                    <br>
-                    <a class="buy-btn" href="https://www.farfetch.com/au/shopping/women/ami-paris-ami-de-coeur-crew-neck-jumper-item-19595067.aspx?storeid=11935" target="_blank">Buy Now</a>
-                </div>
-                <div class="slider-img">
-
-                    <img src="img/ami-paris-sweater.jpg" />
-                    <label for="ss2-item-9" class="slideshow--nav slideshow--nav-previous">Go to slide 9</label>
-                    <label for="ss2-item-1" class="slideshow--nav slideshow--nav-next">Go to slide 1</label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Email form -->
-    <section id="email">
-        <form action="mailto:maria.mempin@hotmail.com" method="post" enctype="text/plain">
-            <div class="contact container shadow" id="contact_form">
-                <div class="contact row header">
-                    <h1 style="color:#555555">Please send any questions below:</h1>
-
-                    <div id="contact_results"></div>
-                </div>
-                <div class="contact row body" id="contact_body">
-                    <div class="contact-elements">
-                        <ul>
-                            <li>
-                                <p class="left">
-                                    <label for="name">name</label>
-                                    <input type="text" name="name" id="name" required="true" class="input-field" placeholder="Marcus Noah" />
-                                </p>
-                                <p class="pull-right">
-                                    <label for="phone">phone</label>
-                                    <input type="number" name="phone" maxlength="15" class="tel-number-field long" placeholder="123 456 7890" />
-                                </p>
-                            </li>
-                            <div class="center-btn" style="position:relevant; height:5vh;">
+                        <div id="contact_results"></div>
+                    </div>
+                    <div class="contact row body" id="contact_body">
+                        <div class="contact-elements">
+                            <ul>
                                 <li>
-                                    <label for="email">email <span class="req">*</span></label>
-                                    <input type="email" name="email" required="true" class="input-field" placeholder="marcus.noah@gmail.com" />
+                                    <p class="left">
+                                        <label for="name">name</label>
+                                        <input type="text" name="name" id="name" required="true" class="input-field" placeholder="Marcus Noah" />
+                                    </p>
+                                    <p class="pull-right">
+                                        <label for="phone">phone</label>
+                                        <input type="number" name="phone" maxlength="15" class="tel-number-field long" placeholder="123 456 7890" />
+                                    </p>
                                 </li>
-                            </div>
+                                <div class="center-btn" style="position:relevant; height:5vh;">
+                                    <li>
+                                        <label for="email">email <span class="req">*</span></label>
+                                        <input type="email" name="email" required="true" class="input-field" placeholder="marcus.noah@gmail.com" />
+                                    </li>
+                                </div>
 
+                                <li>
+                                    <div class="contact divider"></div>
+                                </li>
+                                <li>
+                                    <label for="message">message</label>
+                                    <textarea cols="46" rows="8" name="message" id="message" class="textarea-field" required="true"></textarea>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="center-btn" style="position:relevant; height:5vh;">
                             <li>
-                                <div class="contact divider"></div>
+                                <input id="submit_btn" class="btn btn-submit" type="submit" value="Submit" />
                             </li>
-                            <li>
-                                <label for="message">message</label>
-                                <textarea cols="46" rows="8" name="message" id="message" class="textarea-field" required="true"></textarea>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="center-btn" style="position:relevant; height:5vh;">
-                        <li>
-                            <input id="submit_btn" class="btn btn-submit" type="submit" value="Submit" />
-                        </li>
+                        </div>
                     </div>
                 </div>
+            </form>
+        </section>
+        <!-- Back to top button -->
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+        <!-- Footer -->
+        <footer>
+            <div id="copyright">
+                &copy; All Rights Reserved 2023.
             </div>
-        </form>
-    </section>
-    <!-- Back to top button -->
-    <a href="#" id="scroll" style="display: none;"><span></span></a>
-    <!-- Footer -->
-    <footer>
-        <div id="copyright">
-            &copy; All Rights Reserved 2023.
-        </div>
-        <div id="owner">
-            <span>
+            <div id="owner">
+                <span>
                Designed by Me
            </span>
-        </div>
+            </div>
 
-    </footer>
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
-                    $('#scroll').fadeIn();
-                } else {
-                    $('#scroll').fadeOut();
-                }
+        </footer>
+        <script>
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $('#scroll').fadeIn();
+                    } else {
+                        $('#scroll').fadeOut();
+                    }
+                });
+                $('#scroll').click(function() {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 600);
+                    return false;
+                });
             });
-            $('#scroll').click(function() {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, 600);
-                return false;
-            });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
