@@ -26,7 +26,7 @@
             h4,
             h5,
             h6 {
-                font-family: roboto;
+                font-family: lato;
                 color: #2E2E2E
             }
             
@@ -146,7 +146,6 @@
             
             #intro-info span {
                 display: block;
-                font-family: raleway;
                 font-weight: 600;
                 padding: 0 0 55px;
                 font-size: 23px;
@@ -171,6 +170,7 @@
                 background: #8B7E74;
                 text-align: center;
                 padding: 50px;
+                font-family: roboto;
             }
             
             #timer div {
@@ -671,14 +671,14 @@
             #copyright {
                 text-align: center;
                 color: #fff;
-                font-family: lato;
+                font-family: roboto;
             }
             
             #owner {
                 text-align: center;
                 padding: 20px 0 0px;
                 color: #fff;
-                font-family: lato;
+                font-family: roboto;
                 font-size: 25px;
             }
             
