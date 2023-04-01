@@ -510,6 +510,7 @@
                 border: solid 2px #8B7E74;
                 background-color: transparent;
                 width: 100%;
+                text-align: center;
             }
             
             .btn.btn-submit:hover {
