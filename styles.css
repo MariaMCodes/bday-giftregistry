@@ -284,7 +284,7 @@
             
             .slideshow--nav:after {
                 display: block;
-                content: '\25B6';
+                content: '\25BA';
                 font-size: 1.2em;
                 color: #fff;
                 background-color: rgba(0, 0, 0, 0.2);
