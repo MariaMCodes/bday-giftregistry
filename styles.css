@@ -600,9 +600,9 @@
                 .div.contact-elements p.pull-right {
                     float: none;
                 }
-                /*.center-btn {
-                    text-align: left;
-                }*/
+                .center-btn {
+                    text-align: center;
+                }
                 input {
                     width: 100%;
                 }
