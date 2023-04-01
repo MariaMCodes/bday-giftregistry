@@ -484,6 +484,7 @@
             }
             
             .btn {
+                text-align: center;
                 font-size: 1.0625em;
                 display: inline-block;
                 padding: 0.74em 1.5em;
