@@ -284,10 +284,12 @@
             
             .slideshow--nav:after {
                 display: block;
-                content: '\25BA';
+                content: '\276F';
+                /*\25BA*/
                 font-size: 1.2em;
-                color: #fff;
-                background-color: rgba(0, 0, 0, 0.2);
+                color: rgba(0, 0, 0, 0.4);
+                background-color: transparent;
+                /*rgba(0, 0, 0, 0.2)*/
                 position: absolute;
                 height: 50px;
                 top: 50%;
@@ -301,7 +303,9 @@
             }
             
             .slideshow--nav:hover:after {
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: transparent;
+                /*rgba(0, 0, 0, 0.6)*/
+                color: rgba(0, 0, 0, 0.8);
             }
             
             .slideshow--nav-previous {
