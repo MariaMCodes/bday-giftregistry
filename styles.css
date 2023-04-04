@@ -1103,7 +1103,7 @@
             /* <---- Small Devices (portrait and landscape) ----> */
             /* ------------------------------------------------------ */
             
-            @media only screen and (max-width: 380px) {
+            @media only screen and (max-width: 390px) {
                 #intro {
                     padding: 0 0 1.5em 0;
                 }
