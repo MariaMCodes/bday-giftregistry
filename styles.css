@@ -400,7 +400,7 @@
             
             #email {
                 background-color: #f6f6f6;
-                height: 720px;
+                height: 50em;
                 padding: 0.1em 0 0 0;
             }
             
@@ -642,18 +642,6 @@
                 }
                 li small {
                     display: none;
-                }
-            }
-            
-            @media only screen and (max-width: 402px) {
-                #email {
-                    height: 200px;
-                }
-            }
-            
-            @media only screen and (min-width:100px) and (max-width: 402px) {
-                #email {
-                    height: 900px;
                 }
             }
             /* Back to top button */
