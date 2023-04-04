@@ -42,7 +42,6 @@
                 padding: 1em 4em;
                 font-family: roboto;
                 /* Surrounds nav box */
-                background-color: #F7F5EB;
             }
             
             nav {
@@ -643,6 +642,18 @@
                 }
                 li small {
                     display: none;
+                }
+            }
+            
+            @media only screen and (max-width: 402px) {
+                #email {
+                    height: 200px;
+                }
+            }
+            
+            @media only screen and (min-width:100px) and (max-width: 402px) {
+                #email {
+                    height: 800px;
                 }
             }
             /* Back to top button */
