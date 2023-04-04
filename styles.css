@@ -810,6 +810,7 @@
                 #header-top {
                     position: relative;
                     padding-bottom: 0;
+                    width: 100%;
                 }
                 /* Logo */
                 #header-top .logo {
@@ -820,6 +821,7 @@
                     font-size: 40px;
                     left: 0;
                     padding-left: 1em;
+                    width: 100%;
                 }
                 /* Menu button visible */
                 /* can change background color */
@@ -1085,6 +1087,7 @@
                     padding-top: .05em;
                     font-size: 30px;
                     padding-left: .6em;
+                    width: 100%;
                 }
                 .mainMenu a.active:first-child {
                     margin-top: 15px;
