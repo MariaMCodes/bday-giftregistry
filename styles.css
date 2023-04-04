@@ -39,7 +39,7 @@
             /* Header at top of webpage, contains the nav bar */
             
             #header-top {
-                padding: 1em;
+                padding: 1em 0 1em 0;
                 font-family: roboto;
                 /* Surrounds nav box */
             }
