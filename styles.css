@@ -205,6 +205,11 @@
                 padding-left: 2em;
             }
             
+            .purchase-sign {
+                color: #F15A59;
+                padding-top: 0.8em;
+            }
+            
             .buy-btn {
                 text-decoration: none;
                 background-color: transparent;
